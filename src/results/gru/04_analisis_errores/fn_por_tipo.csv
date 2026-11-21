@@ -1,0 +1,3 @@
+tipo de ataque,filas,fn_persistentes,fn_media_por_semilla,pct_fn_persistentes
+Slowhttptest,250,21,21.4,8.4
+Slowloris,914,6,10.4,0.6564551422319475

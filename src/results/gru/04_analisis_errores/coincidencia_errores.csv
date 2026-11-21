@@ -1,0 +1,3 @@
+error,en ambos,solo GRU W=10 (orden aleatorio),solo GRU W=1
+FN,8,19,0
+FP,32,83,18

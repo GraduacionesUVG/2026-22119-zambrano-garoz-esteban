@@ -1,0 +1,36 @@
+{
+  "descripcion": "Comparación de las dos corridas del GRU baseline (W=10) bajo distintos criterios de monitoreo para EarlyStopping. Ver docs/gru/adr/0003-gru-early-stopping-criterion.md para el análisis completo.",
+  "corrida_1_val_recall": {
+    "criterio_monitor": "val_recall",
+    "mode": "max",
+    "patience": 5,
+    "epocas_entrenadas": 6,
+    "epoca_restaurada": 1,
+    "metricas_test": {
+      "accuracy": 0.9932,
+      "precision": 0.7065,
+      "recall": 0.9973,
+      "f1": 0.8271,
+      "roc_auc": 0.9998,
+      "confusion_matrix": [[65952, 457], [3, 1100]]
+    },
+    "nota": "Descartada como criterio de parada: val_recall a umbral fijo es una señal ruidosa con solo 2,109 positivos en validación, y los pesos restaurados (época 1) correspondieron al peor val_loss (~0.016) de toda la corrida, no a una mejora real del modelo."
+  },
+  "corrida_3_val_loss_baseline_oficial": {
+    "criterio_monitor": "val_loss",
+    "mode": "min",
+    "patience": 5,
+    "epocas_entrenadas": 27,
+    "epoca_restaurada": 22,
+    "mejor_val_loss": 0.0014,
+    "metricas_test": {
+      "accuracy": 0.9972,
+      "precision": 0.9740,
+      "recall": 0.8486,
+      "f1": 0.9070,
+      "roc_auc": 0.9996,
+      "confusion_matrix": [[66384, 25], [167, 936]]
+    },
+    "nota": "Baseline oficial congelado en notebooks/gru/gru_model_training.ipynb: mejor generalización y muchas menos falsas alarmas que la corrida 1 (25 FP vs. 457), a costa de recall crudo notablemente menor (0.8486 vs. 0.9973, 167 falsos negativos vs. 3) — trade-off que se aborda ajustando el umbral de decisión post-entrenamiento en notebooks/gru/gru_feature_engineering.ipynb, sin reentrenar."
+  }
+}

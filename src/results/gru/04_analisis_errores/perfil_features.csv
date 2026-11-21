@@ -1,0 +1,5 @@
+resultado,filas,Flow Duration,Total Fwd Packets,Total Backward Packets,Fwd Packet Length Mean,Flow IAT Mean,Flow Bytes/s,Init_Win_bytes_forward,Init_Win_bytes_backward
+TP,1137,8537923.0,2.0,1.0,8.0,1710425.417,24.5778878,235.0,235.0
+FN,27,192.0,1.0,2.0,1448.0,96.0,10300000.0,235.0,235.0
+FP,115,1667990.0,2.0,0.0,31.0,1635986.0,37.89763482,395.0,-1.0
+TN,65175,30961.0,2.0,2.0,37.0,12144.2,5070.568097,0.0,-1.0

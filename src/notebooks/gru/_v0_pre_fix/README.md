@@ -1,0 +1,1 @@
+Notebooks de la GRU v0, previos al fix de preprocesamiento (main 1838c89). Archivados como evidencia histórica: no son ejecutables con el código actual (imports y rutas cambiaron) y sus resultados no son comparables con los nuevos. Ver results/gru/_v0_pre_fix/.

@@ -1,0 +1,7 @@
+*.pdf binary
+*.png binary
+*.jpg binary
+*.mp4 binary
+*.keras binary
+*.joblib binary
+*.npy binary

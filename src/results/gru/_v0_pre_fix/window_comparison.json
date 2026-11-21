@@ -1,0 +1,22 @@
+[
+  {
+    "configuracion": "baseline_w10",
+    "val_loss": 0.001350093400105834,
+    "f2_maximo": 0.9966903073286053,
+    "umbral_f2_maximo": 0.05,
+    "f1_maximo": 0.9945536348567369,
+    "umbral_f1_maximo": 0.337,
+    "epocas_entrenadas": null,
+    "parametros_totales": 9345
+  },
+  {
+    "configuracion": "baseline_w20",
+    "val_loss": 0.0017979202093556523,
+    "f2_maximo": 0.9944149943203333,
+    "umbral_f2_maximo": 0.373,
+    "f1_maximo": 0.9917394382818031,
+    "umbral_f1_maximo": 0.373,
+    "epocas_entrenadas": 7,
+    "parametros_totales": 9345
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "configuracion": "baseline_32",
+    "val_loss": 0.001350093400105834,
+    "f2_maximo": 0.9966903073286053,
+    "umbral_f2_maximo": 0.05,
+    "f1_maximo": 0.9945536348567369,
+    "umbral_f1_maximo": 0.337,
+    "epocas_entrenadas": null,
+    "parametros_totales": 9345
+  },
+  {
+    "configuracion": "gru_64",
+    "val_loss": 0.003202816704288125,
+    "f2_maximo": 0.9921609369097092,
+    "umbral_f2_maximo": 0.438,
+    "f1_maximo": 0.986346516007533,
+    "umbral_f1_maximo": 0.47800000000000004,
+    "epocas_entrenadas": 7,
+    "parametros_totales": 24833
+  },
+  {
+    "configuracion": "gru_32_16",
+    "val_loss": 0.008940472267568111,
+    "f2_maximo": 0.9664985247929951,
+    "umbral_f2_maximo": 0.323,
+    "f1_maximo": 0.9721822541966427,
+    "umbral_f1_maximo": 0.454,
+    "epocas_entrenadas": 9,
+    "parametros_totales": 11729
+  }
+]

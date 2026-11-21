@@ -1,0 +1,3 @@
+tipo de minuto,minutos,filas,fp_persistentes,fp_media_por_semilla,pct_fp_persistentes
+con ataques,10,8336,77,89.4,0.9237044145873321
+sin ataques,82,56954,38,41.8,0.06672051128981284

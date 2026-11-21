@@ -1,0 +1,40 @@
+# Entorno
+.env
+.env.local
+.env.*.local
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Datos (no se versionan por tamaño)
+src/data/**
+!src/data/**/
+!src/data/**/.gitkeep
+*.npy
+*.zip
+*.csv
+!src/results/**/*.csv
+!src/results/**/*.npy
+!src/demo/Data_Test/**/*.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build y temporales
+dist/
+build/
+*.log
+tmp/
+temp/

@@ -1,0 +1,92 @@
+{
+  "fuente": {
+    "archivo": "data\\raw\\GeneratedLabelledFlows\\TrafficLabelling\\Wednesday-workingHours.pcap_ISCX.csv",
+    "filtro": "filter_low_and_slow(): BENIGN, DoS slowloris y DoS Slowhttptest; orden del archivo",
+    "correccion_timestamp": "parsear_timestamp(): horas < 8 se desplazan +12 h",
+    "filas": 451326,
+    "filas_por_clase": {
+      "BENIGN": 440031,
+      "DoS slowloris": 5796,
+      "DoS Slowhttptest": 5499
+    },
+    "minutos": 509,
+    "pares_consecutivos": 451325
+  },
+  "definiciones": {
+    "par_consecutivo_mismo_minuto": "par de filas i-1, i consecutivas en el orden del archivo (tras el filtro de clases) cuyo Timestamp corregido es el mismo minuto",
+    "pct_observado": "100 · (pares consecutivos del mismo minuto con la misma IP) / (pares consecutivos del mismo minuto)",
+    "pct_esperado_azar": "100 · Σ_m pares_m · Σ_ip p_{m,ip}² / Σ_m pares_m, donde m recorre los minutos, pares_m es el número de pares consecutivos del mismo minuto que caen en m y p_{m,ip} es la proporción de filas del minuto m con esa IP. Σ_ip p² es la probabilidad de que dos filas del minuto tomadas al azar compartan IP"
+  },
+  "por_columna": {
+    "Source IP": {
+      "pares_mismo_minuto": 130565,
+      "pares_misma_ip": 89566,
+      "pct_observado": 68.59878221575461,
+      "pct_esperado_azar": 21.729765970364785
+    },
+    "Destination IP": {
+      "pares_mismo_minuto": 130565,
+      "pares_misma_ip": 61484,
+      "pct_observado": 47.09072109677172,
+      "pct_esperado_azar": 15.28592664151962
+    }
+  },
+  "reconciliacion_02_ablaciones": {
+    "descripcion": "Mismo cálculo que la sección 5 de notebooks/gru/02_ablaciones.ipynb: minuto = texto crudo del Timestamp (sin corregir) y esperado ponderado por el número de filas de cada minuto en lugar de por sus pares consecutivos.",
+    "por_columna": {
+      "Source IP": {
+        "pares_mismo_minuto": 130565,
+        "pares_misma_ip": 89566,
+        "pct_observado": 68.59878221575461,
+        "pct_esperado_azar": 21.679069223123747
+      },
+      "Destination IP": {
+        "pares_mismo_minuto": 130565,
+        "pares_misma_ip": 61484,
+        "pct_observado": 47.09072109677172,
+        "pct_esperado_azar": 15.385628235964397
+      }
+    }
+  },
+  "orden_de_las_ventanas": {
+    "descripcion": "Filas del CSV procesado (443,614) con sus IPs del CSV crudo, en el orden de train_test_split_by_flow() con sus valores por defecto: sort_values('Timestamp', kind='stable') (src/preprocessing/clean.py:560), que conserva el orden del CSV procesado en los empates de minuto, y corte por bloque y posición 70/15/15. Es el orden de la variante csv de las secuencias.",
+    "mapeo": {
+      "metodo": "load_and_clean() no reinicia el índice (filter_low_and_slow, excluir_respuestas_de_ataque, basic_cleaning y excluir_ataques_fuera_de_ventana filtran con máscaras), así que el índice de cada fila limpia es su fila en el CSV crudo (RangeIndex de load_raw_csvs). Se repiten esos pasos y se compara fila a fila con el CSV procesado, guardado en el mismo orden.",
+      "verificacion": "filas, columnas, Label, label_binaria, Timestamp y 59 features (rtol 1e-12): OK",
+      "filas": 443614
+    },
+    "definicion_par": "par de filas consecutivas en el orden indicado que pertenecen a la misma partición y al mismo bloque (las ventanas del GRU no cruzan ninguno de los dos) y tienen el mismo minuto. El esperado al azar usa Σ_ip p² de cada celda (partición, bloque, minuto), ponderado por los pares de la celda.",
+    "por_columna": {
+      "Source IP": {
+        "pares_mismo_minuto": 443095,
+        "pares_misma_ip": 221858,
+        "pct_observado": 50.07007526602647,
+        "pct_esperado_azar": 21.820065694171316
+      },
+      "Destination IP": {
+        "pares_mismo_minuto": 443095,
+        "pares_misma_ip": 215751,
+        "pct_observado": 48.69181552488744,
+        "pct_esperado_azar": 15.604242142539013
+      }
+    },
+    "variante_aleatoria": {
+      "descripcion": "Mismo cálculo en el orden de la variante aleatorio: permutar_dentro_de_minuto() de scripts/gru/build_gru_sequences.py con SEMILLA_PERMUTACION, que sortea el orden dentro de cada (partición, bloque, Timestamp). Contraste: el esperado al azar es el mismo.",
+      "semilla": 42,
+      "por_columna": {
+        "Source IP": {
+          "pares_mismo_minuto": 443095,
+          "pares_misma_ip": 96394,
+          "pct_observado": 21.754702716121823,
+          "pct_esperado_azar": 21.820065694171316
+        },
+        "Destination IP": {
+          "pares_mismo_minuto": 443095,
+          "pares_misma_ip": 68484,
+          "pct_observado": 15.455827757027274,
+          "pct_esperado_azar": 15.604242142539013
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+modelo,error,filas_de_la_clase,en_alguna_semilla,solo_en_una_semilla,persistentes,en_las_5_semillas
+GRU W=10 (orden aleatorio),FN,1164,59,24,27,17
+GRU W=10 (orden aleatorio),FP,65290,252,101,115,49
+GRU W=1,FN,1164,212,203,8,8
+GRU W=1,FP,65290,145,66,50,11

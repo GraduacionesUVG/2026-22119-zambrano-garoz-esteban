@@ -1,0 +1,27 @@
+Conteo de Label por split:
+                   train    val   test
+Label                                 
+BENIGN            302299  64657  65369
+DoS Slowhttptest    4144   1095    260
+DoS slowloris       4086    789    915
+
+Rango horario por split en los bloques de ataque:
+  bloque 2 | train: 09:48 – 10:03 (21253 filas, duración 0 days 00:15:00)
+  bloque 2 | val  : 10:03 – 10:07 (4554 filas, duración 0 days 00:04:00)
+  bloque 2 | test : 10:07 – 10:11 (4555 filas, duración 0 days 00:04:00)
+  bloque 4 | train: 10:15 – 10:29 (23242 filas, duración 0 days 00:14:00)
+  bloque 4 | val  : 10:29 – 10:33 (4980 filas, duración 0 days 00:04:00)
+  bloque 4 | test : 10:33 – 10:37 (4981 filas, duración 0 days 00:04:00)
+
+Duplicados de features (reportar_duplicados_de_features):
+split  clase  filas  dup_en_split  en_train
+train      0 302299         29556       NaN
+train      1   8230           288       NaN
+  val      0  64657          4807    7848.0
+  val      1   1884           180     121.0
+ test      0  65369          4142    8084.0
+ test      1   1175           109      33.0
+
+Filas cuyo vector aparece con ambas etiquetas: 0
+
+Criterios: OK

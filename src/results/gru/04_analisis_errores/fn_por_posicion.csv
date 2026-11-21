@@ -1,0 +1,7 @@
+tipo de ataque,posicion,desde,hasta,filas,fn_persistentes,fn_media_por_semilla,pct_fn_persistentes
+Slowhttptest,inicio,10:33,10:34,98,3,5.4,3.061224489795918
+Slowhttptest,medio,10:35,10:35,24,2,2.2,8.333333333333334
+Slowhttptest,final,10:36,10:37,128,16,13.8,12.5
+Slowloris,inicio,10:07,10:08,479,0,0.0,0.0
+Slowloris,medio,10:09,10:09,262,0,0.0,0.0
+Slowloris,final,10:10,10:11,173,6,10.4,3.468208092485549

@@ -1,0 +1,19 @@
+{
+  "modelo": "GRU_baseline_w10",
+  "accuracy": 0.9971560611446854,
+  "precision": 0.9739854318418314,
+  "recall": 0.8485947416137806,
+  "f1": 0.9069767441860465,
+  "roc_auc": 0.9995549435012379,
+  "confusion_matrix": [
+    [
+      66384,
+      25
+    ],
+    [
+      167,
+      936
+    ]
+  ],
+  "nota_split_cronologico": "val y test NO tienen la misma proporción de ataque (3.12% vs 1.63%) porque train_test_split_by_flow() hace un corte cronológico posicional por bloques, no estratificado — ver docs/gru/adr/0001-split-cronologico-por-bloques-temporales.md. Es un comportamiento esperado, no una fuga ni un bug."
+}

@@ -1,0 +1,148 @@
+{
+  "conjunto": "validacion",
+  "config": {
+    "units": 32,
+    "dropout": 0.3,
+    "learning_rate": 0.001,
+    "batch_size": 64,
+    "epochs": 50,
+    "patience": 10
+  },
+  "semillas": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "regla": "media de recall_05 o de pr_auc de la ablación < media_base − 2·std_base",
+  "comparacion": {
+    "baseline_w10": {
+      "val_loss": {
+        "media": 0.0014553372282534837,
+        "std": 0.0009515299816713761,
+        "diferencia_vs_baseline": 0.0
+      },
+      "recall_05": {
+        "media": 0.9958598726114649,
+        "std": 0.0012103773090224221,
+        "diferencia_vs_baseline": 0.0
+      },
+      "precision_05": {
+        "media": 0.9868143863172397,
+        "std": 0.018495914093647467,
+        "diferencia_vs_baseline": 0.0
+      },
+      "pr_auc": {
+        "media": 0.9995344386498409,
+        "std": 0.00025661492939996314,
+        "diferencia_vs_baseline": 0.0
+      },
+      "f2": {
+        "media": 0.9968559541362966,
+        "std": 0.0014485064652828103,
+        "diferencia_vs_baseline": 0.0
+      },
+      "fn_f2": {
+        "media": 6.8,
+        "std": 3.2710854467592254,
+        "diferencia_vs_baseline": 0.0
+      },
+      "fp_f2": {
+        "media": 2.4,
+        "std": 1.3416407864998738,
+        "diferencia_vs_baseline": 0.0
+      }
+    },
+    "w1": {
+      "val_loss": {
+        "media": 0.005942816287279129,
+        "std": 0.0016516790896067915,
+        "diferencia_vs_baseline": 0.004487479059025645
+      },
+      "recall_05": {
+        "media": 0.9804670912951167,
+        "std": 0.016140594629467958,
+        "diferencia_vs_baseline": -0.015392781316348247
+      },
+      "precision_05": {
+        "media": 0.9640491690931757,
+        "std": 0.04393774861740632,
+        "diferencia_vs_baseline": -0.022765217224063994
+      },
+      "pr_auc": {
+        "media": 0.9931168326768305,
+        "std": 0.0012536509519765829,
+        "diferencia_vs_baseline": -0.006417605973010443
+      },
+      "f2": {
+        "media": 0.9808952768556841,
+        "std": 0.0104756506925285,
+        "diferencia_vs_baseline": -0.015960677280612456
+      },
+      "fn_f2": {
+        "media": 14.6,
+        "std": 25.948024973010952,
+        "diferencia_vs_baseline": 7.8
+      },
+      "fp_f2": {
+        "media": 124.0,
+        "std": 109.10774491299873,
+        "diferencia_vs_baseline": 121.6
+      }
+    },
+    "aleatorio_w10": {
+      "val_loss": {
+        "media": 0.00543300025165081,
+        "std": 0.000634731863151311,
+        "diferencia_vs_baseline": 0.003977663023397326
+      },
+      "recall_05": {
+        "media": 0.9759023354564755,
+        "std": 0.005724123021037322,
+        "diferencia_vs_baseline": -0.01995753715498938
+      },
+      "precision_05": {
+        "media": 0.9703512719209453,
+        "std": 0.003832005702252744,
+        "diferencia_vs_baseline": -0.016463114396294443
+      },
+      "pr_auc": {
+        "media": 0.9965588918575754,
+        "std": 0.0014027181931628655,
+        "diferencia_vs_baseline": -0.0029755467922655265
+      },
+      "f2": {
+        "media": 0.9789421241908958,
+        "std": 0.005376055286266306,
+        "diferencia_vs_baseline": -0.017913829945400805
+      },
+      "fn_f2": {
+        "media": 20.8,
+        "std": 10.56882207249228,
+        "diferencia_vs_baseline": 14.0
+      },
+      "fp_f2": {
+        "media": 117.2,
+        "std": 17.852170736355845,
+        "diferencia_vs_baseline": 114.8
+      }
+    }
+  },
+  "veredictos": {
+    "w1": {
+      "veredicto": "la secuencia aporta",
+      "metricas_que_cumplen": [
+        "recall_05",
+        "pr_auc"
+      ]
+    },
+    "aleatorio_w10": {
+      "veredicto": "hay dependencia del orden del CSV",
+      "metricas_que_cumplen": [
+        "recall_05",
+        "pr_auc"
+      ]
+    }
+  }
+}

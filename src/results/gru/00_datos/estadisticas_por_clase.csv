@@ -1,0 +1,28 @@
+﻿columna,clase,n,p25,mediana,p75
+Flow Duration,BENIGN,432325,184.0,31000.0,549744.0
+Flow Duration,DoS slowloris,5790,3002438.5,97085685.5,102713365.25
+Flow Duration,DoS Slowhttptest,5499,20998404.5,63117636.0,63154935.0
+Total Fwd Packets,BENIGN,432325,2.0,2.0,4.0
+Total Fwd Packets,DoS slowloris,5790,2.0,3.0,14.0
+Total Fwd Packets,DoS Slowhttptest,5499,4.0,7.0,7.0
+Total Backward Packets,BENIGN,432325,1.0,2.0,2.0
+Total Backward Packets,DoS slowloris,5790,0.0,2.0,3.0
+Total Backward Packets,DoS Slowhttptest,5499,0.0,0.0,2.0
+Total Length of Fwd Packets,BENIGN,432325,31.0,68.0,168.0
+Total Length of Fwd Packets,DoS slowloris,5790,0.0,16.0,2541.0
+Total Length of Fwd Packets,DoS Slowhttptest,5499,0.0,0.0,530.0
+Total Length of Bwd Packets,BENIGN,432325,6.0,143.0,350.0
+Total Length of Bwd Packets,DoS slowloris,5790,0.0,0.0,6.0
+Total Length of Bwd Packets,DoS Slowhttptest,5499,0.0,0.0,0.0
+Flow Bytes/s,BENIGN,432325,232.3350041,5569.359952,376315.7895
+Flow Bytes/s,DoS slowloris,5790,0.0,2.210705679,24.80681039
+Flow Bytes/s,DoS Slowhttptest,5499,0.0,0.0,28.611330340000002
+Flow Packets/s,BENIGN,432325,12.65414328,105.1967179,20512.82051
+Flow Packets/s,DoS slowloris,5790,0.165475026,0.179850195,0.99920130525
+Flow Packets/s,DoS Slowhttptest,5499,0.110857653,0.110913085,0.152813277
+Flow IAT Mean,BENIGN,432325,69.0,12197.41176,124016.0
+Flow IAT Mean,DoS slowloris,5790,1501189.0,5869173.75,6445113.791999999
+Flow IAT Mean,DoS Slowhttptest,5499,10500000.0,10500000.0,10500000.0
+Fwd IAT Mean,BENIGN,432325,1.0,4.0,50714.0
+Fwd IAT Mean,DoS slowloris,5790,1501191.375,7043315.0335,9565989.24375
+Fwd IAT Mean,DoS Slowhttptest,5499,10500000.0,10500000.0,13100000.0

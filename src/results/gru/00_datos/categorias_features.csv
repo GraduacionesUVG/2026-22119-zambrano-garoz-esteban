@@ -1,0 +1,60 @@
+﻿columna,categoria
+Flow Duration,duración de conexión
+Total Fwd Packets,número de paquetes
+Total Backward Packets,número de paquetes
+Total Length of Fwd Packets,volumen de datos (bytes/longitudes)
+Total Length of Bwd Packets,volumen de datos (bytes/longitudes)
+Fwd Packet Length Max,volumen de datos (bytes/longitudes)
+Fwd Packet Length Min,volumen de datos (bytes/longitudes)
+Fwd Packet Length Mean,volumen de datos (bytes/longitudes)
+Fwd Packet Length Std,volumen de datos (bytes/longitudes)
+Bwd Packet Length Max,volumen de datos (bytes/longitudes)
+Bwd Packet Length Min,volumen de datos (bytes/longitudes)
+Bwd Packet Length Mean,volumen de datos (bytes/longitudes)
+Bwd Packet Length Std,volumen de datos (bytes/longitudes)
+Flow Bytes/s,tasa de envío (por segundo)
+Flow Packets/s,tasa de envío (por segundo)
+Flow IAT Mean,intervalos entre paquetes (IAT)
+Flow IAT Std,intervalos entre paquetes (IAT)
+Flow IAT Max,intervalos entre paquetes (IAT)
+Flow IAT Min,intervalos entre paquetes (IAT)
+Fwd IAT Total,intervalos entre paquetes (IAT)
+Fwd IAT Mean,intervalos entre paquetes (IAT)
+Fwd IAT Std,intervalos entre paquetes (IAT)
+Fwd IAT Max,intervalos entre paquetes (IAT)
+Fwd IAT Min,intervalos entre paquetes (IAT)
+Bwd IAT Total,intervalos entre paquetes (IAT)
+Bwd IAT Mean,intervalos entre paquetes (IAT)
+Bwd IAT Std,intervalos entre paquetes (IAT)
+Bwd IAT Max,intervalos entre paquetes (IAT)
+Bwd IAT Min,intervalos entre paquetes (IAT)
+Fwd Header Length,volumen de datos (bytes/longitudes)
+Bwd Header Length,volumen de datos (bytes/longitudes)
+Fwd Packets/s,tasa de envío (por segundo)
+Bwd Packets/s,tasa de envío (por segundo)
+Min Packet Length,volumen de datos (bytes/longitudes)
+Max Packet Length,volumen de datos (bytes/longitudes)
+Packet Length Mean,volumen de datos (bytes/longitudes)
+Packet Length Std,volumen de datos (bytes/longitudes)
+Packet Length Variance,volumen de datos (bytes/longitudes)
+FIN Flag Count,otras
+SYN Flag Count,otras
+RST Flag Count,otras
+PSH Flag Count,otras
+ACK Flag Count,otras
+URG Flag Count,otras
+ECE Flag Count,otras
+Down/Up Ratio,otras
+Average Packet Size,volumen de datos (bytes/longitudes)
+Init_Win_bytes_forward,otras
+Init_Win_bytes_backward,otras
+act_data_pkt_fwd,número de paquetes
+min_seg_size_forward,otras
+Active Mean,duración de conexión
+Active Std,duración de conexión
+Active Max,duración de conexión
+Active Min,duración de conexión
+Idle Mean,intervalos entre paquetes (IAT)
+Idle Std,intervalos entre paquetes (IAT)
+Idle Max,intervalos entre paquetes (IAT)
+Idle Min,intervalos entre paquetes (IAT)

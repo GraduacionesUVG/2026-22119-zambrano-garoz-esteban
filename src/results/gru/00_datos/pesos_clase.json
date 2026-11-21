@@ -1,0 +1,23 @@
+{
+  "baseline_w10": {
+    "archivo_y_train": "y_train_w10.npy",
+    "secuencias": 310484,
+    "ataques": 8230,
+    "peso_benigno": 0.5136143773117974,
+    "peso_ataque": 18.862940461725394
+  },
+  "w1": {
+    "archivo_y_train": "y_train_w10.npy",
+    "secuencias": 310484,
+    "ataques": 8230,
+    "peso_benigno": 0.5136143773117974,
+    "peso_ataque": 18.862940461725394
+  },
+  "aleatorio_w10": {
+    "archivo_y_train": "y_train_w10_aleatorio.npy",
+    "secuencias": 310484,
+    "ataques": 8224,
+    "peso_benigno": 0.5136041818302124,
+    "peso_ataque": 18.87670233463035
+  }
+}

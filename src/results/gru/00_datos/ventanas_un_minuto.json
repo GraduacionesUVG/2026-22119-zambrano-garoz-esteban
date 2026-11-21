@@ -1,0 +1,25 @@
+{
+  "window_size": 10,
+  "por_particion": {
+    "train": {
+      "ventanas": 310484,
+      "en_un_solo_minuto": 307316,
+      "porcentaje": 98.98
+    },
+    "val": {
+      "ventanas": 66496,
+      "en_un_solo_minuto": 65911,
+      "porcentaje": 99.12
+    },
+    "test": {
+      "ventanas": 66499,
+      "en_un_solo_minuto": 65732,
+      "porcentaje": 98.85
+    }
+  },
+  "test_filas_comunes": {
+    "ventanas": 66454,
+    "en_un_solo_minuto": 65687,
+    "porcentaje": 98.85
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "pasos": [
+    {
+      "paso": "captura_del_miercoles",
+      "filas": 692703,
+      "eliminadas": null
+    },
+    {
+      "paso": "filtro_de_clases",
+      "filas": 451326,
+      "eliminadas": 241377
+    },
+    {
+      "paso": "exclusion_respuestas_de_ataque",
+      "filas": 444537,
+      "eliminadas": 6789
+    },
+    {
+      "paso": "limpieza_basica",
+      "filas": 443620,
+      "eliminadas": 917
+    },
+    {
+      "paso": "codificacion_de_etiquetas",
+      "filas": 443620,
+      "eliminadas": 0
+    },
+    {
+      "paso": "exclusion_ataques_fuera_de_ventana",
+      "filas": 443614,
+      "eliminadas": 6
+    }
+  ],
+  "filas_por_clase": {
+    "BENIGN": 432325,
+    "DoS slowloris": 5790,
+    "DoS Slowhttptest": 5499
+  }
+}
